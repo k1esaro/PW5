@@ -5,6 +5,7 @@
         array[i] = new Random().Next(-100,100);
     }
 }
+
 int release(int [] array)
 {
     int result = 0;
@@ -24,10 +25,12 @@ int release(int [] array)
     result = max - min;
     return result;
 }
+
 void output(int [] array)
 {
-        Console.WriteLine($"[{string.Join(", ", array)}]");
+    Console.WriteLine($"[{string.Join(", ", array)}]");
 }
+
 Console.Clear();
 Console.Write("Введите кол-во элементов массива = ");
 int n = Convert.ToInt32(Console.ReadLine());
