@@ -19,7 +19,10 @@ int release(int [] array)
 }
 void output(int [] array)
 {
+    for (int i = 0; i< array.Length ; i++)
+    {
         Console.WriteLine($"[{string.Join(", ", array)}]");
+    }
 }
 Console.Clear();
 Console.Write("Введите кол-во элементов массива = ");
